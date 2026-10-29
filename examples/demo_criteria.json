@@ -1,0 +1,5 @@
+{
+  "absolute_tolerance_m3": 1,
+  "relative_tolerance": 0.02,
+  "maximum_interval_m": 25
+}

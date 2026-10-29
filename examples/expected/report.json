@@ -1,0 +1,73 @@
+{
+  "demo": true,
+  "method": "average-end-area-v1",
+  "criteria": {
+    "absolute_tolerance_m3": 1,
+    "relative_tolerance": 0.02,
+    "maximum_interval_m": 25
+  },
+  "totals": {
+    "cut_m3": 500.0,
+    "fill_m3": 320.0,
+    "net_cut_minus_fill_m3": 180.0
+  },
+  "intervals": [
+    {
+      "from_m": 0.0,
+      "to_m": 20.0,
+      "findings": [],
+      "cut_m3": 240.0,
+      "cut_tolerance_m3": 4.8,
+      "claimed_cut_m3": 240.0,
+      "cut_delta_m3": 0.0,
+      "fill_m3": 20.0,
+      "fill_tolerance_m3": 1.0,
+      "claimed_fill_m3": 20.0,
+      "fill_delta_m3": 0.0
+    },
+    {
+      "from_m": 20.0,
+      "to_m": 40.0,
+      "findings": [
+        "CUT_DIFFERENCE_EXCEEDS_TOLERANCE"
+      ],
+      "cut_m3": 200.0,
+      "cut_tolerance_m3": 4.0,
+      "claimed_cut_m3": 210.0,
+      "cut_delta_m3": 10.0,
+      "fill_m3": 120.0,
+      "fill_tolerance_m3": 2.4,
+      "claimed_fill_m3": 120.0,
+      "fill_delta_m3": 0.0
+    },
+    {
+      "from_m": 40.0,
+      "to_m": 60.0,
+      "findings": [],
+      "cut_m3": 60.0,
+      "cut_tolerance_m3": 1.2,
+      "claimed_cut_m3": 60.0,
+      "cut_delta_m3": 0.0,
+      "fill_m3": 180.0,
+      "fill_tolerance_m3": 3.6,
+      "claimed_fill_m3": 180.0,
+      "fill_delta_m3": 0.0
+    }
+  ],
+  "unmatched_claims": [],
+  "review_items": 1,
+  "inputs": [
+    {
+      "file": "sections.csv",
+      "sha256": "d7eb0e960fb87392c40d7979ba83b1596e3becd475b6ce6bb13cfa0dc834f07f"
+    },
+    {
+      "file": "claimed_quantities.csv",
+      "sha256": "583d577586d9a8895e4893273d4dec06288756b46d7ab3126a9898a12b14bbbb"
+    },
+    {
+      "file": "demo_criteria.json",
+      "sha256": "1c744da84f1d1af4491215e36d9ffacb07d78bd35edf467b8b09ea7ad36c6da3"
+    }
+  ]
+}
